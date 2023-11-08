@@ -113,3 +113,40 @@ exit
 ```
 
 **Congratulations!** You now have your own Overleaf instance running.
+
+### EVEN MORE PACKAGES
+Enter container shell (if not already done):
+```bash
+bin/shell
+```
+
+If you want even more packages, you can use the following command:
+```bash
+wget https://mirror.clientvps.com/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+```
+
+```bash
+tar -xf install-tl-unx.tar.gz
+cd install-tl-*
+perl install-tl
+```
+Then choose ``I`` to install all packages.
+
+
+## Fix "Our Overleaf Instance is currently down for maintenance."
+
+If your Overleaf instance is showing the following message:
+![Overleaf Maintenance](../media/overleafMaintenance.jpg)
+
+Enter container shell:
+```bash
+bin/shell
+```
+
+edit the following file: `/etc/sharelatex/site_status` and replace `closed` with `open`.
+
+
+## Source
+[Overleaf-Toolkit](https://github.com/overleaf/toolkit/)
+[Fix Maintenance Mode](https://github.com/overleaf/toolkit/issues/186)
+[Install more packages](https://blog.felixviola.de/overleaf-ce-self-host-your-own-latex-server-tutorial/)
