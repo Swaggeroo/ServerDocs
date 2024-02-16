@@ -4,9 +4,9 @@ This guide will help you to set up an 433Mhz Stick to read (your) 433Mhz devices
 
 But **WHY** should you do this?
 
-It especially useful if you want many cheap and energy efficient sensors for your home automation.
+It is especially useful if you want many cheap and energy efficient sensors for your home automation.
 I was able to get the antenna/stick for about 20€ on AliExpress and a cheap window sensor for about 3€.
-And there also a lot of other sensors available for 433Mhz.
+And there are also a lot of other sensors available for 433Mhz.
 A nice side effect is that many cheaper weather stations also use 433Mhz, so you can also get the readings from your neighbors and not have to buy your own.😉
 
 ## Hardware

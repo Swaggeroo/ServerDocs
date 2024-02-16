@@ -73,9 +73,9 @@ http://[your domain / IP]:[your port]/launchpad
 
 There you can create your first user and login.
 
-On the page after the login are the status of the Overleaf instance. This should show *`OK`* for all services.
+On the page after the login there is the status of the Overleaf instance. This should show *`OK`* for all services.
 
-There you also can send a test email if you [set up your SMTP server](#smtp-server-optional).
+There you can also send a test email if you [set up your SMTP server](#smtp-server-optional).
 
 Now you can stop the Overleaf instance with `CTRL+C`.
 
