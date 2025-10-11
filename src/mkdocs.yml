@@ -1,0 +1,64 @@
+site_name: Swaggeroo's Docs
+theme:
+  name: material
+  features:
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: light green
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: light green
+plugins:
+  - search
+  - mermaid2
+  - macros
+  - autolinks
+  - glightbox:
+      touchNavigation: true
+      loop: true
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: true
+      caption_position: bottom
+markdown_extensions:
+  - pymdownx.superfences:
+      # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.highlight:
+      auto_title: true
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
