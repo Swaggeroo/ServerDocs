@@ -1,4 +1,4 @@
-FROM python:3.14.0-alpine AS builder
+FROM python:3.14.1-alpine AS builder
 RUN apk add --no-cache build-base python3-dev
 RUN pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin mkdocs-macros-plugin mkdocs-autolinks-plugin mkdocs-glightbox
 WORKDIR /src
