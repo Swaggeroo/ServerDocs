@@ -5,7 +5,7 @@ WORKDIR /src
 COPY src /src
 RUN mkdocs build
 
-FROM nginx:1.31.4-alpine
+FROM nginx:1.31.5-alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 COPY --from=builder /src/site/ /usr/share/nginx/html/
